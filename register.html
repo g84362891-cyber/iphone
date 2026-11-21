@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple ID — Ro‘yxatdan o‘tish va Buyurtma</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="reg-body">
+
+  <!-- MINIMAL APPLE HEADER -->
+  <header class="apple-nav light-nav">
+    <div class="nav-container">
+      <a href="index.html" class="apple-logo dark-logo">
+        <i class="fa-brands fa-apple"></i>
+      </a>
+      <div class="nav-icons">
+        <a href="index.html" class="back-home-link">&larr; Bosh sahifaga qaytish</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="reg-main">
+    <div class="reg-container">
+      <div class="reg-header">
+        <i class="fa-brands fa-apple reg-apple-icon"></i>
+        <h1>Apple ID yarating va iPhone buyurtma qiling</h1>
+        <p>Barcha Apple xizmatlari va rasmiy buyurtmalar uchun yagona hisob qaydnomasi.</p>
+      </div>
+
+      <!-- TANLANGAN TELEFON KARTASI (Agar telefon bosib kirilgan bo'lsa avtomatik chiqadi) -->
+      <div class="selected-device-box" id="selectedDeviceBox" style="display:none;">
+        <img id="selPhoneImg" src="" alt="Tanlangan iPhone">
+        <div class="sel-device-info">
+          <span class="sel-badge">Tanlangan qurilma</span>
+          <h3 id="selPhoneName">iPhone 16 Pro</h3>
+          <p id="selPhonePrice">$999</p>
+        </div>
+      </div>
+
+      <form id="appleRegisterForm" class="apple-form" onsubmit="handleRegistration(event)">
+        <div class="form-grid-2">
+          <div class="input-group">
+            <label for="firstName">Ism</label>
+            <input type="text" id="firstName" placeholder="Ismingiz" required>
+          </div>
+          <div class="input-group">
+            <label for="lastName">Familiya</label>
+            <input type="text" id="lastName" placeholder="Familiyangiz" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="modelSelect">iPhone modelini tanlang</label>
+          <select id="modelSelect" onchange="updateSelectedPhonePreview()" required>
+            <option value="iPhone 16 Pro Max">iPhone 16 Pro Max — $1,199</option>
+            <option value="iPhone 16 Pro">iPhone 16 Pro — $999</option>
+            <option value="iPhone 16 Plus">iPhone 16 Plus — $899</option>
+            <option value="iPhone 16">iPhone 16 — $799</option>
+            <option value="iPhone 15 Pro Max">iPhone 15 Pro Max — $1,099</option>
+            <option value="iPhone 15 Pro">iPhone 15 Pro — $899</option>
+            <option value="iPhone 15">iPhone 15 — $699</option>
+            <option value="iPhone 14">iPhone 14 — $599</option>
+          </select>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="input-group">
+            <label for="storageSelect">Xotira hajmi</label>
+            <select id="storageSelect">
+              <option value="128 GB">128 GB</option>
+              <option value="256 GB" selected>256 GB</option>
+              <option value="512 GB">512 GB</option>
+              <option value="1 TB">1 TB</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="colorSelect">Korpus rangi</label>
+            <select id="colorSelect">
+              <option value="Desert Titanium">Desert Titanium</option>
+              <option value="Natural Titanium">Natural Titanium</option>
+              <option value="Black Titanium">Black Titanium</option>
+              <option value="White Titanium">White Titanium</option>
+              <option value="Ultramarine">Ultramarine</option>
+            </select>
+          </div>
+        </div>
+
+        <hr class="form-divider">
+
+        <div class="input-group">
+          <label for="emailInput">Apple ID (Elektron pochta)</label>
+          <input type="email" id="emailInput" placeholder="ism@icloud.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="phoneInput">Telefon raqam</label>
+          <input type="tel" id="phoneInput" placeholder="+998 90 123 45 67" required>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="input-group">
+            <label for="passInput">Parol</label>
+            <input type="password" id="passInput" placeholder="Kamida 8 ta belgi" minlength="8" required>
+          </div>
+          <div class="input-group">
+            <label for="confirmPass">Parolni tasdiqlang</label>
+            <input type="password" id="confirmPass" placeholder="Parolni qayta kiriting" minlength="8" required>
+          </div>
+        </div>
+
+        <p id="formError" class="form-error"></p>
+
+        <button type="submit" class="btn-apple-blue full-submit">Ro‘yxatdan o‘tish va Tasdiqlash</button>
+      </form>
+
+      <!-- MUVAFFAQIYATLI RO'YXATDAN O'TISH XABARI -->
+      <div id="successCard" class="success-box" style="display:none;">
+        <div class="check-circle"><i class="fa-solid fa-check"></i></div>
+        <h2>Tabriklaymiz! Ro‘yxatdan o‘tdingiz</h2>
+        <p id="successSummary"></p>
+        <a href="index.html" class="btn-apple-blue">Asosiy sahifaga qaytish</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

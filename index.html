@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone — Apple (O‘zbekiston)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- APPLE GLOBAL NAVIGATION BAR -->
+  <header class="apple-nav">
+    <div class="nav-container">
+      <a href="#top" class="apple-logo" aria-label="Apple">
+        <i class="fa-brands fa-apple"></i>
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#lineup">iPhone modellari</a>
+        <a href="#carousel">Yangiliklar</a>
+        <a href="#compare">Solishtirish</a>
+        <a href="#ecosystem">Ekotizim</a>
+        <a href="register.html" class="nav-reg-mobile">Ro‘yxatdan o‘tish</a>
+      </nav>
+      <div class="nav-icons">
+        <a href="register.html" class="nav-reg-btn" title="Apple ID / Ro‘yxatdan o‘tish">
+          <i class="fa-regular fa-user"></i> <span>Ro‘yxatdan o‘tish</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menyu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUB-RIBBON -->
+  <div class="promo-ribbon">
+    Istalgan iPhone modelini tanlang va oldindan buyurtma berish uchun ro‘yxatdan o‘ting. <a href="register.html">Ro‘yxatdan o‘tish &rsaquo;</a>
+  </div>
+
+  <!-- HERO SECTION: IPHONE 16 PRO MAX -->
+  <section id="top" class="hero-pro">
+    <div class="hero-pro-content">
+      <p class="hero-eyebrow">Yangi</p>
+      <h1 class="hero-title">iPhone 16 Pro</h1>
+      <p class="hero-subtitle">Titan korpus. Apple Intelligence uchun yaratilgan. A18 Pro chipi.</p>
+      <div class="hero-cta-group">
+        <a href="register.html?model=iPhone%2016%20Pro" class="btn-apple-blue">Buyurtma berish</a>
+        <a href="#lineup" class="btn-apple-outline">Barcha modellar &rsaquo;</a>
+      </div>
+    </div>
+    <div class="hero-pro-media">
+      <img src="https://images.unsplash.com/photo-1726828537956-61ae115d7d7a?auto=format&fit=crop&w=1400&q=85" alt="iPhone 16 Pro Titan">
+    </div>
+  </section>
+
+  <!-- SECONDARY HERO: IPHONE 16 -->
+  <section class="hero-standard">
+    <div class="hero-std-content">
+      <h2 class="hero-std-title">iPhone 16</h2>
+      <p class="hero-std-sub">Kamera boshqaruvi tugmasi. Yangi A18 chipi. Yorqin ranglar.</p>
+      <div class="hero-cta-group">
+        <a href="register.html?model=iPhone%2016" class="btn-apple-blue">Xarid qilish</a>
+        <a href="#compare" class="btn-apple-link">Texnik xususiyatlar &rsaquo;</a>
+      </div>
+    </div>
+    <div class="hero-std-media">
+      <img src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1300&q=85" alt="iPhone 16">
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CAROUSEL SECTION -->
+  <section id="carousel" class="carousel-section">
+    <div class="section-heading-row">
+      <h2>iPhone bilan tanishing.</h2>
+      <div class="carousel-controls">
+        <button class="c-arrow" id="prevSlide" aria-label="Oldingi"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="c-arrow" id="nextSlide" aria-label="Keyingi"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Slide 1 -->
+        <div class="c-card dark-card" onclick="goToRegister('iPhone 16 Pro Max')">
+          <div class="c-card-text">
+            <span>A18 Pro Chip</span>
+            <h3>Kino darajasidagi 4K 120 kadr/s Dolby Vision.</h3>
+          </div>
+          <img src="https://images.unsplash.com/photo-1696446701796-da61225697cc?auto=format&fit=crop&w=900&q=85" alt="iPhone 16 Pro Kamera">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="c-card light-card" onclick="goToRegister('iPhone 16 Pro')">
+          <div class="c-card-text">
+            <span>Titan Dizayn</span>
+            <h3>Mustahkam. Yengil. Pro darajasida mukammal.</h3>
+          </div>
+          <img src="https://images.unsplash.com/photo-1695048132832-b41495f12eb4?auto=format&fit=crop&w=900&q=85" alt="iPhone Titan korpus">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="c-card dark-card" onclick="goToRegister('iPhone 15 Pro')">
+          <div class="c-card-text">
+            <span>Batareya quvvati</span>
+            <h3>33 soatgacha uzluksiz video tomosha qilish imkoniyati.</h3>
+          </div>
+          <img src="https://images.unsplash.com/photo-1678685888221-cda773a3dcdb?auto=format&fit=crop&w=900&q=85" alt="iPhone Batareya va Ekran">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="c-card light-card" onclick="goToRegister('iPhone 16 Plus')">
+          <div class="c-card-text">
+            <span>Super Retina XDR</span>
+            <h3>Quyosh nurida ham tiniq va jonli tasvirlar.</h3>
+          </div>
+          <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?auto=format&fit=crop&w=900&q=85" alt="iPhone Displey">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- IPHONE LINEUP (HAR BIR TELEFON BOSILGANDA REGISTRATSIYA OYNASIGA O'TADI) -->
+  <section id="lineup" class="lineup-section">
+    <div class="section-heading-row">
+      <h2>Qatorni o‘rganing.</h2>
+      <p class="hint-text">Buyurtma berish uchun istalgan iPhone ustiga bosing</p>
+    </div>
+
+    <div class="lineup-grid" id="lineupGrid">
+      <!-- JavaScript orqali original nom va mos rasmlar bilan chiziladi -->
+    </div>
+  </section>
+
+  <!-- COMPARE SPECS TABLE -->
+  <section id="compare" class="compare-section">
+    <h2>Asosiy texnik ko‘rsatkichlar</h2>
+    <div class="table-scroll">
+      <table class="apple-table">
+        <thead>
+          <tr>
+            <th>Model</th>
+            <th>Displey</th>
+            <th>Protsessor</th>
+            <th>Asosiy kamera</th>
+            <th>Korpus</th>
+            <th>Buyurtma</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>iPhone 16 Pro Max</strong></td>
+            <td>6.9" Super Retina XDR (120Hz)</td>
+            <td>Apple A18 Pro</td>
+            <td>48 MP Fusion + 5x Telephoto</td>
+            <td>5-darajali Titan</td>
+            <td><a href="register.html?model=iPhone%2016%20Pro%20Max" class="table-buy">Tanlash &rsaquo;</a></td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 16 Pro</strong></td>
+            <td>6.3" Super Retina XDR (120Hz)</td>
+            <td>Apple A18 Pro</td>
+            <td>48 MP Fusion + 5x Telephoto</td>
+            <td>5-darajali Titan</td>
+            <td><a href="register.html?model=iPhone%2016%20Pro" class="table-buy">Tanlash &rsaquo;</a></td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 16</strong></td>
+            <td>6.1" Super Retina XDR</td>
+            <td>Apple A18</td>
+            <td>48 MP Fusion + Ultra Wide</td>
+            <td>Aerokosmik alyuminiy</td>
+            <td><a href="register.html?model=iPhone%2016" class="table-buy">Tanlash &rsaquo;</a></td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 15 Pro</strong></td>
+            <td>6.1" Super Retina XDR (120Hz)</td>
+            <td>Apple A17 Pro</td>
+            <td>48 MP Pro kamera tizimi</td>
+            <td>Titan</td>
+            <td><a href="register.html?model=iPhone%2015%20Pro" class="table-buy">Tanlash &rsaquo;</a></td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 15</strong></td>
+            <td>6.1" Super Retina XDR</td>
+            <td>Apple A16 Bionic</td>
+            <td>48 MP asosiy kamera</td>
+            <td>Alyuminiy va rangli shisha</td>
+            <td><a href="register.html?model=iPhone%2015" class="table-buy">Tanlash &rsaquo;</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ECOSYSTEM BANNER -->
+  <section id="ecosystem" class="eco-section">
+    <div class="eco-card">
+      <div class="eco-text">
+        <span>Apple Ekotizimi</span>
+        <h3>iPhone va Mac, AirPods, Apple Watch — barchasi bir butun.</h3>
+        <p>Bir qurilmada boshlagan ishingizni ikkinchisida davom ettiring. Bir zumda AirDrop orqali fayl almashing.</p>
+        <a href="register.html" class="btn-apple-blue">Apple ID yaratish</a>
+      </div>
+      <div class="eco-img">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85" alt="Apple Ekotizimi">
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLE STYLE FOOTER -->
+  <footer class="apple-footer">
+    <div class="footer-inner">
+      <p class="footer-note">
+        1. Ko‘rsatilgan narxlar bazaviy xotira hajmi uchun amal qiladi. Rasmiy kafolat va ro‘yxatdan o‘tish alohida sahifada amalga oshiriladi.
+      </p>
+      <div class="footer-cols">
+        <div>
+          <h4>Xarid qilish va o‘rganish</h4>
+          <a href="#lineup">iPhone 16 Pro Max</a>
+          <a href="#lineup">iPhone 16 Pro</a>
+          <a href="#lineup">iPhone 16</a>
+          <a href="#lineup">iPhone 15 Pro</a>
+        </div>
+        <div>
+          <h4>Hisob qaydnomasi</h4>
+          <a href="register.html">Apple ID ro‘yxatdan o‘tish</a>
+          <a href="register.html">Buyurtmani rasmiylashtirish</a>
+        </div>
+        <div>
+          <h4>Aloqa va Manzil</h4>
+          <p>Toshkent sh., Amir Temur shoh ko‘chasi</p>
+          <p>Ish vaqti: 09:00 – 22:00</p>
+          <p>Tel: +998 (71) 200-00-16</p>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>Copyright &copy; 2026 Apple Inc. Barcha huquqlar himoyalangan.</span>
+        <span>O‘zbekiston</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
